@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Desafio de Coletar Pontos - Quanto mais pontos você coletar, mais rápido o
+      jogo se tornará.
+    </title>
+    <link rel="shortcut icon" href="./Imagens/icone.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="./Styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <p>Score:</p>
+        <h1 class="score">00</h1>
+      </div>
+      <div class="cenario">
+        <div class="comida"></div>
+        <div class="jogador"></div>
+      </div>
+      <div class="buttonsControl">
+        <button onclick="atributosJogador.positionMoviment = 'Left';">
+          <i class="ti ti-arrow-big-left"></i>
+        </button>
+        <button onclick="atributosJogador.positionMoviment = 'Right';">
+          <i class="ti ti-arrow-big-right"></i>
+        </button>
+        <button onclick="atributosJogador.positionMoviment = 'Up';">
+          <i class="ti ti-arrow-big-up"></i>
+        </button>
+        <button onclick="atributosJogador.positionMoviment = 'Down';">
+          <i class="ti ti-arrow-big-down"></i>
+        </button>
+      </div>
+
+      <div class="repositorio">
+        <a
+          href="https://github.com/CarlosEduts/Jogo-Captura-de-Pontos"
+          style="font-size: 14px; text-align: center"
+        >
+          Explore o repositório do jogo <br />
+          e descubra todos os detalhes.</a
+        >
+      </div>
+      <div class="endGameContainer">
+        <h1>Game Over</h1>
+        <p>você Perdeu!</p>
+        <button onclick="jogarNovamente()">Jogar Novamente.</button>
+      </div>
+    </div>
+
+    <script src="./Script/index.js"></script>
+  </body>
+</html>

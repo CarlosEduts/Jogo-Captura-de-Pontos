@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.container {
+  background-color: #0a0a12;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container div {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  line-height: 5px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.cenario {
+  position: relative;
+  background-color: #000000;
+  min-width: 350px;
+  min-height: 350px;
+}
+
+.jogador,
+.comida {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #f0f8ff;
+}
+
+.buttonsControl button {
+  margin-top: 50px;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  background-color: #ffffff33;
+  border-radius: 5px;
+  color: #fefefe;
+  border: 1px solid #ffffff;
+}
+
+.repositorio {
+  margin-top: 30px;
+}
+
+.endGameContainer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.endGameContainer button {
+  width: 160px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 16px;
+  background-color: #0072f3;
+  margin-top: 30px;
+  border: none;
+  opacity: 0.8;
+  transition: all 200ms;
+}
+
+.endGameContainer button:hover {
+  opacity: 1;
+}
